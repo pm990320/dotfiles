@@ -7,6 +7,8 @@ brew tap caskroom/versions
 
 # CLI basics
 brew install git curl wget
+git config --global user.name "Patrick Menlove"
+git config --global user.email "patmenlove@gmail.com"
 
 # ZSH & iTerm
 brew install zsh
@@ -48,11 +50,14 @@ ln -s /usr/local/bin/python3 /usr/local/bin/python
 python --version
 
 # Node
-# to
-# brew install nvm yarn
-# mkdir ~/.nvm
-# nvm install --lts
-# nvm use --lts
+brew install yarn
+mkdir ~/.nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm install --lts
+nvm use --lts
 
 # Terraform
 brew install terraform
