@@ -1,35 +1,29 @@
-dockutil --remove all
-sleep 2
+dockutil --no-restart --remove all
 
-dockutil --add '~' --view grid --display folder --section apps
-dockutil --add '/Applications/Siri.app'
-dockutil --add '/Applications/Launchpad.app'
-sleep 2
+dockutil --no-restart --add '~' --view grid --display folder --section apps
+dockutil --no-restart --add '/Applications/Siri.app'
+dockutil --no-restart --add '/Applications/Launchpad.app'
 
-dockutil --add 'Productivity' --type spacer --section apps --after 'Launchpad'
-dockutil --add '/Applications/Firefox.app'
-dockutil --add '/Applications/Spark.app'
-sleep 2
-dockutil --add '/Applications/Trello.app'
-dockutil --add '/Applications/Calendar.app'
-dockutil --add '/Applications/Messages.app'
-sleep 5
+dockutil --no-restart --add 'Productivity' --type spacer --section apps --after 'Launchpad'
+dockutil --no-restart --add '/Applications/Firefox.app'
+dockutil --no-restart --add '/Applications/Spark.app'
+dockutil --no-restart --add '/Applications/Trello.app'
+dockutil --no-restart --add '/Applications/Calendar.app'
+dockutil --no-restart --add '/Applications/Messages.app'
 
-dockutil --add 'Programming' --type spacer --section apps --after 'Messages'
-dockutil --add '/Applications/iTerm.app'
-dockutil --add '/Applications/Atom.app'
-sleep 2
-dockutil --add '/Applications/PyCharm.app'
-dockutil --add '/Applications/WebStorm.app'
-dockutil --add '/Applications/IntelliJ IDEA.app'
-sleep 5
+dockutil --no-restart --add 'Programming' --type spacer --section apps --after 'Messages'
+dockutil --no-restart --add '/Applications/iTerm.app'
+dockutil --no-restart --add '/Applications/Atom.app'
+dockutil --no-restart --add '/Applications/PyCharm.app'
+dockutil --no-restart --add '/Applications/WebStorm.app'
+dockutil --no-restart --add '/Applications/IntelliJ IDEA.app'
 
-dockutil --add 'System' --type spacer --section apps --after 'IntelliJ IDEA'
-dockutil --add '/Applications/LastPass.app'
-dockutil --add '/Applications/Authy Desktop.app'
-sleep 2
-dockutil --add '/Applications/App Store.app'
-dockutil --add '/Applications/System Preferences.app'
-sleep 7
+dockutil --no-restart --add 'System' --type spacer --section apps --after 'IntelliJ IDEA'
+dockutil --no-restart --add '/Applications/LastPass.app'
+dockutil --no-restart --add '/Applications/Authy Desktop.app'
+dockutil --no-restart --add '/Applications/App Store.app'
+dockutil --no-restart --add '/Applications/System Preferences.app'
 
-dockutil --add '~/Downloads' --view grid --display stack
+dockutil --no-restart --add '~/Downloads' --view grid --display stack
+
+killall Dock
