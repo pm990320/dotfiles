@@ -43,6 +43,10 @@ mas install 926036361  # LastPass fat client
 # setup MacOS defaults
 . .macos
 
+# Setup Dock
+brew install dockutil
+./setup_dock.sh
+
 # Programming languages setup
 # Python
 brew install python
