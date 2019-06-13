@@ -32,7 +32,7 @@ cp -i .bashrc ~/.bashrc
 cp -i .zshrc ~/.zshrc
 
 # Must have applications
-brew cask install firefox atom docker jetbrains-toolbox pycharm webstorm intellij-idea
+brew cask install firefox atom docker jetbrains-toolbox pycharm webstorm intellij-idea visual-studio-code
 brew install mas
 mas install 1176895641 # Spark
 mas install 803453959  # Slack
