@@ -8,6 +8,7 @@ dockutil --no-restart --add 'Productivity' --type spacer --section apps --after 
 dockutil --no-restart --add '/Applications/Firefox.app'
 dockutil --no-restart --add '/Applications/Spark.app'
 dockutil --no-restart --add '/Applications/Trello.app'
+dockutil --no-restart --add '/Applications/Slack.app'
 dockutil --no-restart --add '/Applications/Calendar.app'
 dockutil --no-restart --add '/Applications/Messages.app'
 

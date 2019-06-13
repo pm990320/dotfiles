@@ -6,7 +6,7 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 
 # CLI basics
-brew install git curl wget
+brew install git curl wget jq
 git config --global user.name "Patrick Menlove"
 git config --global user.email "patmenlove@gmail.com"
 
@@ -63,6 +63,10 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 nvm use --lts
 
+# Android
+brew cask install android-sdk
+
+
 # Terraform
 brew install terraform
 
@@ -93,3 +97,6 @@ git config --global user.signingkey B21F8BBC6E7335EF4C7B0BD8C2BB893186B3E679
 
 # AWS access / keys
 brew install awscli
+
+# Xcode (last since it takes a while)
+mas install 497799835  # xcode
