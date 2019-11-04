@@ -63,6 +63,9 @@ export NVM_DIR="$HOME/.nvm"
 nvm install --lts
 nvm use --lts
 
+# Ruby
+brew install rbenv
+
 # Android
 brew cask install android-sdk
 
