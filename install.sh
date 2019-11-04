@@ -1,9 +1,11 @@
+cp -i .gitconfig ~/.gitconfig
+
 # first thing's first, install homebrew
 if ! [ -x "$(command -v brew)" ]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-brew tap caskroom/cask
-brew tap caskroom/versions
+brew tap homebrew/cask
+brew tap homebrew/cask-versions
 
 # CLI basics
 brew install git curl wget jq
@@ -69,6 +71,8 @@ brew install rbenv
 # Android
 brew cask install android-sdk
 
+# Go
+brew install go
 
 # Terraform
 brew install terraform

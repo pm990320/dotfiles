@@ -15,3 +15,10 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 # Java
 export JAVA_HOME="$(/usr/libexec/java_home)"
 export PATH=$JAVA_HOME/bin:$PATH
+
+# Go
+export GOPATH="${HOME}/.go"
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+test -d "${GOPATH}" || mkdir "${GOPATH}"
+test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"

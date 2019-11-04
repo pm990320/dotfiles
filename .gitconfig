@@ -1,0 +1,10 @@
+[commit]
+	gpgsign = true
+[user]
+	signingkey = B21F8BBC6E7335EF4C7B0BD8C2BB893186B3E679
+	name = Patrick Menlove
+	email = patmenlove@gmail.com
+[gpg]
+	program = gpg
+[url "git@github.com:"]
+    insteadOf = "https://github.com/"
