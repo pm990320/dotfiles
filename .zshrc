@@ -14,6 +14,6 @@ source $ZSH/oh-my-zsh.sh
 source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
-source ~/.bashrc
+source ~/.bash_profile
 
 eval "$(rbenv init -)"

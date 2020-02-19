@@ -13,7 +13,7 @@ git config --global user.name "Patrick Menlove"
 git config --global user.email "patmenlove@gmail.com"
 
 # ZSH & iTerm
-brew install zsh
+brew install zsh autoenv bash-git-prompt
 brew cask install iterm2
 
 if [ "$SHELL" != "/bin/zsh" ]; then
