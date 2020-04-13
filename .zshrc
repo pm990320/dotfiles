@@ -17,3 +17,6 @@ export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
 source ~/.bash_profile
 
 eval "$(rbenv init -)"
+
+bindkey "[D" backward-word
+bindkey "[C" forward-word
