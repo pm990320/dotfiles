@@ -4,9 +4,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# SSH
-ssh-add -q ~/.ssh/id_rsa
-
 # Android
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
 export ANDROID_HOME=/usr/local/Caskroom/android-sdk/4333796
@@ -23,6 +20,5 @@ export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 test -d "${GOPATH}" || mkdir "${GOPATH}"
 test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
-# Kubernetes helpers
-alias k=kubectl
-alias knamespace="kubectl config set-context --current --namespace"
+# Ruby
+eval "$(rbenv init -)"

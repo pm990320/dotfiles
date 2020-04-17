@@ -28,10 +28,12 @@ if ! [ -f ~/.iterm2_shell_integration.zsh ]; then
   curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 fi
 
+cd fonts
+./install.sh
+cd ..
+
 # Bash & Zsh Dotfiles
-cp -i .bash_profile ~/.bash_profile
-cp -i .bashrc ~/.bashrc
-cp -i .zshrc ~/.zshrc
+./install_dotfiles_only.sh
 
 # Must have applications
 brew cask install firefox atom docker jetbrains-toolbox pycharm webstorm intellij-idea visual-studio-code
@@ -47,7 +49,7 @@ mas install 926036361  # LastPass fat client
 
 # Setup Dock
 brew install dockutil
-./setup_dock.sh
+# ./setup_dock.sh
 
 # Programming languages setup
 # Python

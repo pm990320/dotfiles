@@ -1,10 +1,11 @@
 export CLICOLOR=1
 
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
-  GIT_PROMPT_ONLY_IN_REPO=1
-  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-fi
+# disabled due to agnoster theme
+# if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+#   __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+#   GIT_PROMPT_ONLY_IN_REPO=1
+#   source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+# fi
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 source ~/.bashrc
