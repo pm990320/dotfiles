@@ -22,3 +22,6 @@ test -d "${GOPATH}/src/github.com" || mkdir -p "${GOPATH}/src/github.com"
 
 # Ruby
 eval "$(rbenv init -)"
+
+# brew
+export HOMEBREW_AUTO_UPDATE_SECS="86400"

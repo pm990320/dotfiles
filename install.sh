@@ -6,6 +6,8 @@ if ! [ -x "$(command -v brew)" ]; then
 fi
 brew tap homebrew/cask
 brew tap homebrew/cask-versions
+brew tap domt4/autoupdate
+brew autoupdate --start 43200 --upgrade --cleanup --enable-notifications
 
 # CLI basics
 brew install git curl wget jq
