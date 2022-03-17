@@ -7,7 +7,7 @@ fi
 brew tap homebrew/cask
 brew tap homebrew/cask-versions
 brew tap domt4/autoupdate
-brew autoupdate --start 43200 --upgrade --cleanup --enable-notifications
+brew autoupdate --start 43200 --upgrade --cleanup --enable-notification
 
 # CLI basics
 brew install git curl wget jq
@@ -16,7 +16,7 @@ git config --global user.email "patmenlove@gmail.com"
 
 # ZSH & iTerm
 brew install zsh autoenv bash-git-prompt
-brew cask install iterm2
+brew install --cask iterm2
 
 if [ "$SHELL" != "/bin/zsh" ]; then
   chsh -s $(which zsh)
@@ -38,7 +38,7 @@ cd ..
 ./install_dotfiles_only.sh
 
 # Must have applications
-brew cask install firefox atom docker jetbrains-toolbox pycharm webstorm intellij-idea visual-studio-code
+brew install --cask firefox atom docker jetbrains-toolbox pycharm webstorm intellij-idea visual-studio-code
 brew install mas
 mas install 1176895641 # Spark
 mas install 803453959  # Slack
@@ -50,7 +50,7 @@ mas install 926036361  # LastPass fat client
 . .macos
 
 # Setup Dock
-brew install dockutil
+# brew install dockutil
 # ./setup_dock.sh
 
 # Programming languages setup
@@ -73,7 +73,7 @@ nvm use --lts
 brew install rbenv
 
 # Android
-brew cask install android-sdk
+brew install --cask android-sdk
 
 # Go
 brew install go
@@ -99,7 +99,7 @@ fi
 chmod 600 ~/.ssh/id_rsa.pub
 
 # GPG KEYS
-brew cask install gpg-suite
+brew install --cask gpg-suite
 echo "S" | lpass show 5422875641318947951 --attach att-5422875641318947951-1
 gpg --import githubkey.asc
 rm githubkey.asc

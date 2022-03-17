@@ -3,20 +3,13 @@ export ZSH="$HOME/.oh-my-zsh";
 ZSH_THEME="agnoster";
 
 plugins=(
-  git
-  yarn
   ssh-agent
-  zsh_reload
-  python
-  helm
+  npm
+  pipenv
   pip
-  git-auto-fetch
-  dotenv
-  django
-  colored-man-pages
   aws
-  osx
-  kubectl
+  docker
+  docker-compose
 )
 
 export SSH_KEY_PATH="$HOME/.ssh/id_rsa"
@@ -50,3 +43,7 @@ bindkey "[D" backward-word
 bindkey "[C" forward-word
 
 source ~/.bash_profile
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true

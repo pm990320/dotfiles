@@ -25,3 +25,6 @@ eval "$(rbenv init -)"
 
 # brew
 export HOMEBREW_AUTO_UPDATE_SECS="86400"
+
+# Flutter
+export PATH="$PATH:$HOME/Library/flutter/bin"
